@@ -1,5 +1,5 @@
 .container {
-  background-image: url("./sky.png");
+  background-image: url("/sky.png");
   background-size: cover;
   background-position: center;
   height: 590px;
