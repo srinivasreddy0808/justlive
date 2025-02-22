@@ -1,0 +1,68 @@
+/* ::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d232a;
+  padding: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #656e74;
+  border: 2px solid #1d232a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+::-webkit-scrollbar-button {
+  background: #1d232a;
+  height: 16px;
+  width: 16px;
+} */
+
+/* Scoped styles for the app container */
+.app {
+  overflow: auto;
+  height: 100vh; /* Ensure content can scroll */
+}
+
+/* Global scrollbar styles */
+.app::-webkit-scrollbar {
+  width: 16px;
+}
+
+.app::-webkit-scrollbar-track {
+  background: #1d232a; /* track color */
+}
+
+.app::-webkit-scrollbar-thumb {
+  background: #656e74; /* thumb color */
+  border-radius: 6px;
+}
+
+.app::-webkit-scrollbar-button {
+  display: block;
+  background-color: #656e74; /* scrollbar arrows */
+  height: 12px;
+}
+
+/* Modern browser scrollbar support */
+@supports (scrollbar-color: auto) {
+  .app {
+    scrollbar-color: #656e74 #1d232a; /* thumb and track */
+    scrollbar-width: 16px;
+  }
+}
+
+/* Otherwise, use `::-webkit-scrollbar-*` pseudo-elements */
+@supports selector(::-webkit-scrollbar) {
+  .app::-webkit-scrollbar {
+    background: #1d232a;
+  }
+  .app::-webkit-scrollbar-thumb {
+    background: #656e74;
+  }
+}

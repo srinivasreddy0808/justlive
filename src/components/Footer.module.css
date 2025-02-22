@@ -1,0 +1,92 @@
+.footer {
+  background-color: #3a4e78;
+  color: white;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 7.25rem;
+}
+
+.instagramLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.linkText {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+}
+
+.linkText a {
+  color: white;
+  text-decoration: none;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.links p {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.linkedinLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.linkedinIcon {
+  color: transparent;
+  stroke: white;
+  stroke-width: 2px;
+  border: none;
+}
